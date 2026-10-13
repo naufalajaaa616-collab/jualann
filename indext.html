@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NOVA FASHION | Toko Baju & Jaket</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<style>
+:root{--dark:#171717;--gold:#e8b84b;--cream:#f7f5f0}html{scroll-behavior:smooth;scroll-padding-top:85px}body{font-family:Arial,sans-serif;background:var(--cream);color:var(--dark)}.navbar-custom{background:#151515}.navbar-brand{letter-spacing:-1px;font-size:1.45rem}.navbar-brand span,footer h4 span{color:var(--gold)}.nav-link{color:#eee!important}.nav-link:hover{color:var(--gold)!important}.hero{padding:130px 0 70px;background:linear-gradient(120deg,#171717 0%,#303030 62%,#555 100%);color:white;overflow:hidden}.hero h1{font-size:clamp(2.8rem,6vw,5.2rem);font-weight:900;line-height:1.02;letter-spacing:-3px}.hero h1 span{color:var(--gold)}.hero-description{color:#ddd;max-width:480px;line-height:1.8}.hero-image{height:430px;width:100%;object-fit:cover;border-radius:16px;box-shadow:0 20px 50px #0006}.hero-info{display:flex;gap:25px;flex-wrap:wrap}.hero-info strong{display:block;color:var(--gold);font-size:1.1rem}.hero-info small{color:#ddd}.benefits{background:white;border-bottom:1px solid #eee}.benefits i{font-size:1.8rem;color:#b88720}.benefits h6{margin:10px 0 3px;font-weight:700}.section-heading h2{font-weight:800;letter-spacing:-1px}.section-heading p:last-child{color:#777}.category-buttons .btn{margin:3px;border-radius:30px}.product-card{border:0;border-radius:12px;overflow:hidden;height:100%;box-shadow:0 5px 20px #0000000b;transition:transform .2s,box-shadow .2s}.product-card:hover{transform:translateY(-5px);box-shadow:0 12px 28px #00000018}.product-img-wrap{position:relative;background:#e8e5df}.product-img{width:100%;height:285px;object-fit:cover;display:block}.product-badge{position:absolute;top:12px;left:12px}.product-card .card-body{padding:17px}.product-title{font-weight:700}.product-price{font-weight:800;font-size:1.05rem}.old-price{text-decoration:line-through;color:#999;font-size:.85rem;margin-left:6px}.product-rating{color:#c58e19;font-size:.85rem}.btn-gold{background:var(--gold);border-color:var(--gold);color:#171717;font-weight:700}.btn-gold:hover{background:#d5a338;border-color:#d5a338}.about-section{background:white}.about-image{width:100%;height:390px;object-fit:cover;border-radius:15px}.about-copy{line-height:1.85;color:#666}.promo-section{background:#191919;color:white}.promo-section p{color:#ddd}.contact-card{height:100%;padding:26px;background:white;border-radius:12px;text-align:center;box-shadow:0 4px 20px #0000000a}.contact-card i{font-size:2.3rem;color:#198754}.contact-card a{color:#137b47;font-weight:700;text-decoration:none}.footer{background:#151515;color:#ddd}.social-links a{display:inline-flex;width:40px;height:40px;border:1px solid #555;border-radius:50%;align-items:center;justify-content:center;margin:0 5px;color:white;text-decoration:none}.social-links a:hover{background:var(--gold);color:#111}.cart-product-img{width:70px;height:80px;object-fit:cover;border-radius:7px}.qty-btn{width:29px;height:29px;border:1px solid #ddd;background:white;border-radius:5px}.cart-line{border-bottom:1px solid #eee;padding:14px 0}.empty-state{color:#777;text-align:center;padding:40px 10px}.floating-wa{position:fixed;bottom:20px;right:20px;z-index:1040;background:#20b85a;color:white;border-radius:50px;padding:13px 18px;font-weight:700;text-decoration:none;box-shadow:0 5px 20px #0003}.floating-wa:hover{color:white;background:#16984a}.modal-content{border:0;border-radius:14px}.form-label{font-weight:600;font-size:.9rem}@media(max-width:767px){.hero{padding-top:105px}.hero-image{height:310px;margin-top:25px}.product-img{height:230px}.hero h1{letter-spacing:-1.5px}.about-image{height:290px}.hero-info{gap:15px}}
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+ <div class="container">
+  <a class="navbar-brand fw-bold" href="#home">NOVA<span>FASHION.</span></a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-label="Buka navigasi"><span class="navbar-toggler-icon"></span></button>
+  <div class="collapse navbar-collapse" id="navbarMenu">
+   <ul class="navbar-nav mx-auto">
+    <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+    <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+    <li class="nav-item"><a class="nav-link" href="#tentang">Tentang Kami</a></li>
+    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+   </ul>
+   <button class="btn btn-outline-light" data-bs-toggle="offcanvas" data-bs-target="#keranjang"><i class="bi bi-bag"></i> Keranjang <span id="jumlahKeranjang" class="badge bg-warning text-dark">0</span></button>
+  </div>
+ </div>
+</nav>
+
+<section id="home" class="hero">
+ <div class="container"><div class="row align-items-center g-4">
+  <div class="col-lg-6">
+   <p class="text-warning fw-bold mb-3">KOLEKSI TERBARU 2026</p>
+   <h1>Style Keren,<br><span>Harga Bersahabat.</span></h1>
+   <p class="hero-description mt-4">Temukan koleksi baju, kaos, hoodie, dan jaket dengan desain kekinian untuk menemani setiap aktivitasmu.</p>
+   <a href="#produk" class="btn btn-gold btn-lg mt-3">Belanja Sekarang <i class="bi bi-arrow-right"></i></a>
+   <div class="hero-info mt-4"><div><strong>Fashion pilihan</strong><small>Model kekinian</small></div><div><strong>Harga menarik</strong><small>Untuk harian</small></div><div><strong>Pesan mudah</strong><small>Via WhatsApp</small></div></div>
+  </div>
+  <div class="col-lg-6"><img class="hero-image" src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1100&q=85" alt="Koleksi baju dan jaket modern"></div>
+ </div></div>
+</section>
+
+<section class="benefits py-4"><div class="container"><div class="row g-4 text-center">
+ <div class="col-6 col-lg-3"><i class="bi bi-truck"></i><h6>Pengiriman mudah</h6><small class="text-secondary">Konfirmasi dengan admin</small></div>
+ <div class="col-6 col-lg-3"><i class="bi bi-shield-check"></i><h6>Belanja nyaman</h6><small class="text-secondary">Detail pesanan jelas</small></div>
+ <div class="col-6 col-lg-3"><i class="bi bi-tags"></i><h6>Harga bersahabat</h6><small class="text-secondary">Pilihan berbagai gaya</small></div>
+ <div class="col-6 col-lg-3"><i class="bi bi-chat-dots"></i><h6>Layanan WhatsApp</h6><small class="text-secondary">Tanya produk dengan mudah</small></div>
+</div></div></section>
+
+<section id="produk" class="py-5"><div class="container">
+ <div class="section-heading text-center mb-4"><p class="text-warning fw-bold mb-2">KOLEKSI PILIHAN</p><h2>Temukan Gaya Favoritmu</h2><p>Pilih produk, ukuran, lalu masukkan ke keranjang.</p></div>
+ <div class="row g-3 mb-3">
+  <div class="col-md-7"><div class="input-group"><span class="input-group-text bg-white"><i class="bi bi-search"></i></span><input id="cariProduk" class="form-control" placeholder="Cari nama baju atau jaket..." aria-label="Cari produk"></div></div>
+  <div class="col-md-5"><select id="filterKategori" class="form-select" aria-label="Filter kategori"><option value="semua">Semua Kategori</option><option value="kaos">Kaos</option><option value="jaket">Jaket</option><option value="hoodie">Hoodie</option><option value="kemeja">Kemeja</option></select></div>
+ </div>
+ <div class="category-buttons text-center mb-4">
+  <button class="btn btn-dark active" data-kategori="semua">Semua</button><button class="btn btn-outline-dark" data-kategori="kaos">Kaos</button><button class="btn btn-outline-dark" data-kategori="jaket">Jaket</button><button class="btn btn-outline-dark" data-kategori="hoodie">Hoodie</button><button class="btn btn-outline-dark" data-kategori="kemeja">Kemeja</button>
+ </div>
+ <div id="daftarProduk" class="row g-4"></div><p id="pesanKosong" class="text-center py-5 d-none">Produk tidak ditemukan. Coba kata kunci lain.</p>
+</div></section>
+
+<section id="tentang" class="about-section py-5"><div class="container"><div class="row align-items-center g-5">
+ <div class="col-lg-6"><img class="about-image" src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1000&q=85" alt="Inspirasi koleksi fashion modern" loading="lazy"></div>
+ <div class="col-lg-6"><p class="text-warning fw-bold">TENTANG KAMI</p><h2 class="fw-bold mb-3">Tampil Percaya Diri dengan NOVA FASHION</h2><p class="about-copy">NOVA FASHION adalah konsep toko pakaian yang menyediakan pilihan kaos, jaket, hoodie, dan kemeja dengan gaya modern. Pilih pakaian yang sesuai dengan gayamu, tambahkan ke keranjang, dan lanjutkan pemesanan dengan admin melalui WhatsApp.</p><a href="#produk" class="btn btn-dark mt-2">Lihat Koleksi <i class="bi bi-arrow-right"></i></a></div>
+</div></div></section>
+
+<section class="promo-section py-5"><div class="container text-center py-3"><p class="text-warning fw-bold">WAKTUNYA TAMPIL BEDA</p><h2 class="fw-bold display-6">Upgrade Gayamu Hari Ini!</h2><p>Pilih koleksi favorit dan pesan langsung dengan mudah.</p><a href="#produk" class="btn btn-gold btn-lg mt-2">Mulai Belanja</a></div></section>
+
+<section id="kontak" class="py-5"><div class="container"><div class="text-center mb-4"><p class="text-warning fw-bold">HUBUNGI KAMI</p><h2 class="fw-bold">Ada yang Ingin Ditanyakan?</h2><p class="text-secondary">Kami siap membantu kebutuhan fashion kamu.</p></div>
+ <div class="row g-4 justify-content-center"><div class="col-md-5"><div class="contact-card"><i class="bi bi-whatsapp"></i><h5 class="fw-bold mt-2">WhatsApp</h5><p class="text-secondary">Pesan produk atau tanyakan stok.</p><p class="fw-bold">0895637277276</p><a href="https://wa.me/62895637277276?text=Halo%20NOVA%20FASHION%2C%20saya%20ingin%20bertanya%20tentang%20produk." target="_blank" rel="noopener">Hubungi Kami <i class="bi bi-arrow-up-right"></i></a></div></div>
+ <div class="col-md-5"><div class="contact-card"><i class="bi bi-clock"></i><h5 class="fw-bold mt-2">Jam Layanan</h5><p class="text-secondary mb-1">Senin – Sabtu</p><p class="fw-bold">08.00 – 20.00 WIB</p><small class="text-secondary">Jam layanan contoh, bisa disesuaikan.</small></div></div></div>
+</div></section>
+
+<footer class="footer py-4"><div class="container text-center"><h4 class="fw-bold">NOVA<span>FASHION.</span></h4><p>Fashion modern untuk setiap gaya.</p><div class="social-links mb-3"><a href="#kontak" aria-label="Kontak"><i class="bi bi-chat-dots"></i></a><a href="https://wa.me/62895637277276" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a><a href="#home" aria-label="Kembali ke atas"><i class="bi bi-house"></i></a></div><small>© <span id="tahun"></span> NOVA FASHION. Website demo toko baju.</small></div></footer>
+<a class="floating-wa" href="https://wa.me/62895637277276?text=Halo%20NOVA%20FASHION%2C%20saya%20ingin%20bertanya." target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> Chat WhatsApp</a>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="keranjang" aria-labelledby="judulKeranjang">
+ <div class="offcanvas-header"><h5 class="offcanvas-title fw-bold" id="judulKeranjang"><i class="bi bi-bag"></i> Keranjang Belanja</h5><button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Tutup"></button></div>
+ <div class="offcanvas-body"><div id="isiKeranjang"></div><hr><div class="d-flex justify-content-between mb-3"><strong>Total Belanja:</strong><strong id="totalHarga">Rp0</strong></div><button id="checkoutButton" class="btn btn-success w-100"><i class="bi bi-whatsapp"></i> Checkout WhatsApp</button><p class="text-muted small mt-3">Pesanan dikirim melalui WhatsApp untuk konfirmasi dengan penjual.</p></div>
+</div>
+
+<div class="modal fade" id="modalUkuran" tabindex="-1" aria-labelledby="judulModalUkuran" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content">
+ <div class="modal-header"><h5 class="modal-title fw-bold" id="judulModalUkuran">Pilih Ukuran</h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Tutup"></button></div>
+ <div class="modal-body"><p id="namaProdukModal" class="fw-bold"></p><label for="ukuranProduk" class="form-label">Ukuran pakaian</label><select id="ukuranProduk" class="form-select"><option>S</option><option selected>M</option><option>L</option><option>XL</option><option>XXL</option></select><small class="text-secondary">Ukuran contoh; konfirmasikan stok kepada admin.</small></div>
+ <div class="modal-footer"><button class="btn btn-outline-secondary" data-bs-dismiss="modal">Batal</button><button type="button" id="konfirmasiUkuran" class="btn btn-dark">Tambahkan ke Keranjang</button></div>
+</div></div></div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+const NOMOR_WA="62895637277276";
+const produk=[
+{id:1,nama:"Kaos Oversized Basic",kategori:"kaos",harga:99000,lama:129000,label:"BESTSELLER",rating:"4.9",gambar:"https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=700&q=85"},
+{id:2,nama:"Jaket Casual Streetwear",kategori:"jaket",harga:289000,lama:339000,label:"NEW",rating:"4.8",gambar:"https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=700&q=85"},
+{id:3,nama:"Kaos Putih Essential",kategori:"kaos",harga:89000,lama:109000,label:"ESSENTIAL",rating:"4.8",gambar:"https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&w=700&q=85"},
+{id:4,nama:"Hoodie Casual Premium",kategori:"hoodie",harga:219000,lama:259000,label:"FAVORIT",rating:"4.9",gambar:"https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=700&q=85"},
+{id:5,nama:"Jaket Denim Modern",kategori:"jaket",harga:319000,lama:369000,label:"LIMITED",rating:"4.7",gambar:"https://images.unsplash.com/photo-1543076447-215ad9ba6923?auto=format&fit=crop&w=700&q=85"},
+{id:6,nama:"Kemeja Casual Linen",kategori:"kemeja",harga:179000,lama:219000,label:"SMART CASUAL",rating:"4.8",gambar:"https://images.unsplash.com/photo-1598033129183-c4f50c736f10?auto=format&fit=crop&w=700&q=85"},
+{id:7,nama:"Kaos Graphic Street",kategori:"kaos",harga:119000,lama:149000,label:"TRENDING",rating:"4.7",gambar:"https://images.unsplash.com/photo-1503341504253-dff4815485f1?auto=format&fit=crop&w=700&q=85"},
+{id:8,nama:"Hoodie Minimal Zip",kategori:"hoodie",harga:239000,lama:279000,label:"NEW DROP",rating:"4.9",gambar:"https://images.unsplash.com/photo-1578681994506-b8f463449011?auto=format&fit=crop&w=700&q=85"}
+];
+let keranjang=[],produkDipilih=null;
+const rupiah=n=>new Intl.NumberFormat("id-ID",{style:"currency",currency:"IDR",maximumFractionDigits:0}).format(n);
+const el=id=>document.getElementById(id);
+function renderProduk(){
+ const q=el("cariProduk").value.trim().toLowerCase(),kat=el("filterKategori").value;
+ const hasil=produk.filter(p=>(kat==="semua"||p.kategori===kat)&&(p.nama.toLowerCase().includes(q)||p.kategori.includes(q)));
+ const grid=el("daftarProduk");grid.innerHTML="";
+ el("pesanKosong").classList.toggle("d-none",hasil.length>0);
+ hasil.forEach(p=>{
+  const col=document.createElement("div");col.className="col-6 col-lg-3 col-md-4";
+  col.innerHTML=`<div class="card product-card"><div class="product-img-wrap"><img class="product-img" loading="lazy" src="${p.gambar}" alt="${p.nama}"><span class="badge text-bg-warning product-badge">${p.label}</span></div><div class="card-body"><div class="d-flex justify-content-between align-items-center mb-2"><small class="text-secondary text-capitalize">${p.kategori}</small><span class="product-rating">★ ${p.rating}</span></div><div class="product-title">${p.nama}</div><div class="mt-2"><span class="product-price">${rupiah(p.harga)}</span><span class="old-price">${rupiah(p.lama)}</span></div><button class="btn btn-dark w-100 mt-3 btn-pilih" data-id="${p.id}"><i class="bi bi-bag-plus"></i> Pilih Ukuran</button></div></div>`;
+  const img=col.querySelector("img");img.onerror=()=>{img.style.background="#ddd";img.alt="Foto produk tidak dapat dimuat";};
+  col.querySelector("button").addEventListener("click",()=>bukaPilihUkuran(p.id));grid.appendChild(col);
+ });
+ document.querySelectorAll("[data-kategori]").forEach(b=>{const active=b.dataset.kategori===kat;b.classList.toggle("btn-dark",active);b.classList.toggle("btn-outline-dark",!active);});
+}
+function bukaPilihUkuran(id){produkDipilih=produk.find(p=>p.id===id);el("namaProdukModal").textContent=produkDipilih.nama+" — "+rupiah(produkDipilih.harga);el("ukuranProduk").value="M";bootstrap.Modal.getOrCreateInstance(el("modalUkuran")).show();}
+el("konfirmasiUkuran").addEventListener("click",()=>{if(!produkDipilih)return;const size=el("ukuranProduk").value;const item=keranjang.find(i=>i.id===produkDipilih.id&&i.ukuran===size);if(item)item.jumlah++;else keranjang.push({id:produkDipilih.id,ukuran:size,jumlah:1});renderKeranjang();bootstrap.Modal.getOrCreateInstance(el("modalUkuran")).hide();const canvas=bootstrap.Offcanvas.getOrCreateInstance(el("keranjang"));canvas.show();});
+function renderKeranjang(){
+ el("jumlahKeranjang").textContent=keranjang.reduce((s,i)=>s+i.jumlah,0);
+ const root=el("isiKeranjang");root.innerHTML="";
+ if(!keranjang.length)root.innerHTML='<div class="empty-state"><i class="bi bi-bag" style="font-size:2.4rem"></i><p class="fw-bold mt-3 mb-1">Keranjang masih kosong</p><p>Silakan pilih produk favoritmu.</p><button class="btn btn-dark" data-bs-dismiss="offcanvas">Lihat Produk</button></div>';
+ keranjang.forEach(i=>{const p=produk.find(x=>x.id===i.id);const row=document.createElement("div");row.className="cart-line d-flex gap-3";row.innerHTML=`<img class="cart-product-img" src="${p.gambar}" alt="${p.nama}"><div class="flex-grow-1"><div class="fw-bold">${p.nama}</div><small class="text-secondary">Ukuran: ${i.ukuran}</small><div class="fw-bold mt-1">${rupiah(p.harga*i.jumlah)}</div><div class="d-flex align-items-center gap-2 mt-2"><button class="qty-btn" data-action="minus" aria-label="Kurangi">−</button><span>${i.jumlah}</span><button class="qty-btn" data-action="plus" aria-label="Tambah">+</button><button class="btn btn-sm btn-link text-danger ms-auto p-0" data-action="hapus">Hapus</button></div></div>`;
+  row.querySelector('[data-action="minus"]').onclick=()=>ubahJumlah(i,-1);row.querySelector('[data-action="plus"]').onclick=()=>ubahJumlah(i,1);row.querySelector('[data-action="hapus"]').onclick=()=>{keranjang=keranjang.filter(x=>x!==i);renderKeranjang();};root.appendChild(row);
+ });
+ const total=keranjang.reduce((s,i)=>s+produk.find(p=>p.id===i.id).harga*i.jumlah,0);el("totalHarga").textContent=rupiah(total);
+}
+function ubahJumlah(item,delta){item.jumlah+=delta;if(item.jumlah<=0)keranjang=keranjang.filter(i=>i!==item);renderKeranjang();}
+el("checkoutButton").addEventListener("click",()=>{
+ if(!keranjang.length){alert("Keranjang masih kosong. Silakan pilih produk terlebih dahulu.");return;}
+ const daftar=keranjang.map(i=>{const p=produk.find(x=>x.id===i.id);return `- ${p.nama} | Ukuran ${i.ukuran} | ${i.jumlah} pcs | ${rupiah(p.harga*i.jumlah)}`;});
+ const total=keranjang.reduce((s,i)=>s+produk.find(p=>p.id===i.id).harga*i.jumlah,0);
+ const pesan=["Halo NOVA FASHION, saya ingin memesan:","",...daftar,"",`Total sementara: ${rupiah(total)}`,"Mohon konfirmasi stok, ongkos kirim, dan cara pembayaran. Terima kasih."].join("\\n");
+ window.open("https://wa.me/"+NOMOR_WA+"?text="+encodeURIComponent(pesan),"_blank","noopener");
+});
+el("cariProduk").addEventListener("input",renderProduk);el("filterKategori").addEventListener("change",renderProduk);
+document.querySelectorAll("[data-kategori]").forEach(b=>b.addEventListener("click",()=>{el("filterKategori").value=b.dataset.kategori;renderProduk();}));
+el("tahun").textContent=new Date().getFullYear();renderProduk();renderKeranjang();
+</script>
+</body>
+</html>
